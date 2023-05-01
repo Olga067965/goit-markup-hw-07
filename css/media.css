@@ -394,7 +394,7 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
-  .modal-input:focus {
+  /*.modal-input:focus {
     color: var(--iris-color);
     border-color: var(--iris-color);
     fill: var(--iris-color);
@@ -402,7 +402,7 @@
   }
   .modal-icon:focus {
     fill: var(--iris-color);
-  }
+  }*/
   .bottom-container {
     max-width: 1158px;
   }
@@ -473,13 +473,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .modal-icon {
+    outline: transparent;
+  }
   .modal-input:focus {
     color: var(--iris-color);
     border-color: var(--iris-color);
     fill: var(--iris-color);
     border-color: 1px solid var(--iris-color);
   }
-  .modal-icon:focus {
+  .modal-input:focus + .modal-icon {
     fill: var(--iris-color);
   }
   .filter-list {

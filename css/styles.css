@@ -716,7 +716,6 @@ address {
 }
 .input-wrap {
   position: relative;
-  width: 360px;
 }
 .modal-input {
   box-sizing: border-box;
@@ -778,7 +777,6 @@ address {
   line-height: 1.17;
   color: #8e8f99;
   letter-spacing: 0.04em;
-  margin-top: 16px;
 }
 .check-text {
   color: #8e8f99;
