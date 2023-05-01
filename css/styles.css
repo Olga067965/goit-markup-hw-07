@@ -755,6 +755,7 @@ address {
   left: 42px;
   top: 50%;
   transform: translateY(-50%);
+  outline: transparent;
   color: var(--dark-color);
 }
 .comment {
@@ -765,6 +766,15 @@ address {
   resize: none;
   padding-left: 16px;
   letter-spacing: 0.04em;
+}
+.modal-input:is(:hover, :focus) {
+  color: var(--iris-color);
+}
+.modal-input:focus {
+  border: 1px solid var(--iris-color);
+}
+.modal-input:focus + .modal-icon {
+  fill: var(--iris-color);
 }
 .modal-field {
   margin-bottom: 24px;

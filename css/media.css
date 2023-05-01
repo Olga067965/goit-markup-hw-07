@@ -394,15 +394,15 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
-  /*.modal-input:focus {
+  .modal-input:is(:hover, :focus) {
     color: var(--iris-color);
-    border-color: var(--iris-color);
-    fill: var(--iris-color);
-    border-color: 1px solid var(--iris-color);
   }
-  .modal-icon:focus {
+  .modal-input:focus {
+    border: 1px solid var(--iris-color);
+  }
+  .modal-input:focus + .modal-icon {
     fill: var(--iris-color);
-  }*/
+  }
   .bottom-container {
     max-width: 1158px;
   }
@@ -458,6 +458,19 @@
   .check-link {
     color: var(--iris-color);
   }
+  .modal-input:is(:hover, :focus) {
+    color: var(--iris-color);
+  }
+  .modal-input:focus {
+    border: 1px solid var(--iris-color);
+  }
+  .modal-input:focus + .modal-icon {
+    fill: var(--iris-color);
+  }
+  .modal-icon .modal-input {
+    outline: transparent;
+    color: var(--dark-color);
+  }
 }
 
 @media screen and (max-width: 1158px) {
@@ -472,18 +485,6 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-icon {
-    outline: transparent;
-  }
-  .modal-input:focus {
-    color: var(--iris-color);
-    border-color: var(--iris-color);
-    fill: var(--iris-color);
-    border-color: 1px solid var(--iris-color);
-  }
-  .modal-input:focus + .modal-icon {
-    fill: var(--iris-color);
   }
   .filter-list {
     gap: 16px 24px;
