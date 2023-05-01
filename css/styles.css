@@ -802,6 +802,12 @@ address {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 10px;
+  fill: transparent;
+  display: flex;
 }
 .send-modal-btn {
   display: block;
