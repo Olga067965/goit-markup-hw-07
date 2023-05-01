@@ -565,23 +565,18 @@
               id="user-comment"
             ></textarea>
           </label>
-          <div class="modal-field">
+          <div class="form-check">
             <input
+              class="form-check-input is-invalid"
               type="checkbox"
-              name="privacy"
-              id="privacy"
-              class="input-check visually-hidden"
-              value="true"
+              value=""
+              id="invalidCheck3"
+              aria-describedby="invalidCheck3Feedback"
+              required
             />
-            <label class="check-text" for="privacy">
-              <span>
-                <svg class="check-icon" width="6">
-                  <use href="/images/icons.svg#icon-vector"></use>
-                </svg>
-              </span>
-              <p>I accept the terms and conditions of the
-                <a href="#" class="check-link">Privacy Policy</a>
-              </p>
+            <label class="form-check-label" for="invalidCheck3">
+              I accept the terms and conditions of the
+              <a href="#" class="check-link">Privacy Policy</a>
             </label>
           </div>
           <button class="send-modal-btn" type="submit">Send</button>
