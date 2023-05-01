@@ -381,7 +381,7 @@
     fill: var(--iris-color);
     border-color: 1px solid var(--iris-color);
   }
-  .modal-icon {
+  .modal-icon:is(:hover, :focus) {
     fill: var(--iris-color);
   }
   .bottom-container {

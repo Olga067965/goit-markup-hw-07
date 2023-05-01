@@ -759,7 +759,7 @@ address {
 .modal-field {
   margin-bottom: 24px;
   margin-left: 24px;
-  align-items: center;
+  /* align-items: center; */
   height: 16px;
   font-style: normal;
   font-size: 12px;
@@ -767,7 +767,7 @@ address {
   color: var(--light-slate-color);
   letter-spacing: 0.04em;
   display: flex;
-}
+  }
 .check-text {
   color: var(--light-slate-color);
 }
