@@ -27,10 +27,10 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link active" href="./index.html">Studio</a>
+              <a class="header-link link" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="./portfolio.html">Portfolio</a>
+              <a class="header-link link active" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
@@ -69,12 +69,12 @@
           <nav class="mobile-menu-navigation">
             <ul class="mobile-menu-list list">
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link link active" href="./index.html"
+                <a class="mobile-menu-link link" href="./index.html"
                   >Studio</a
                 >
               </li>
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link link" href="./portfolio.html"
+                <a class="mobile-menu-link link active" href="./portfolio.html"
                   >Portfolio</a
                 >
               </li>
@@ -134,7 +134,7 @@
     </header>
     <main>
       <section class="portfolio">
-        <div class="container">
+        <div class="portfolio-container">
           <h1 class="filter-title" hidden>Filters</h1>
           <ul class="filter-list list">
             <li class="filter-item">
@@ -157,13 +157,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="product-link link">
-                  <img
-                    class="product-img"
-                    src="./images/card/banking.jpg"
-                    alt="Banking"
-                    width="360"
-                    height="300"
-                  />
+                  <div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/banking.jpg    1x,
+                          ./images/p/banking@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/banking-tab.jpg    1x,
+                          ./images/p/banking-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/banking-mob.jpg    1x,
+                          ./images/p/banking-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/banking.jpg"
+                        alt="banking app"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -179,13 +204,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="product-link link">
-                  <img
-                    class="product-img"
-                    src="./images/card/cashless.jpg"
-                    alt="Cashless Payment"
-                    width="360"
-                    height="300"
-                  />
+                  <div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/cashless.jpg    1x,
+                          ./images/p/cashless@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/cashless-tab.jpg    1x,
+                          ./images/p/cashless-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/cashless-mob.jpg    1x,
+                          ./images/p/cashless-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/cashless.jpg"
+                        alt="cashless marketing"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -201,13 +251,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="product-link link">
-                  <img
-                    class="product-img"
-                    src="./images/card/meditation.jpg"
-                    alt="Meditation App"
-                    width="360"
-                    height="300"
-                  />
+                  <div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/meditation.jpg    1x,
+                          ./images/p/meditation@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/meditation-tab.jpg    1x,
+                          ./images/p/meditation-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/meditation-mob.jpg    1x,
+                          ./images/p/meditation-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/meditation.jpg"
+                        alt="meditation app"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -223,13 +298,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="product-link link"
-                  ><img
-                    class="product-img"
-                    src="./images/card/taxi.jpg"
-                    alt="Taxi Service"
-                    width="360"
-                    height="300"
-                  />
+                  ><div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/taxi.jpg    1x,
+                          ./images/p/taxi@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/taxi-tab.jpg    1x,
+                          ./images/p/taxi-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/taxi-mob.jpg    1x,
+                          ./images/p/taxi-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/taxi.jpg"
+                        alt="taxi app"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -245,13 +345,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="product-link link"
-                  ><img
-                    class="product-img"
-                    src="./images/card/screen.jpg"
-                    alt="Screen Illustrations"
-                    width="360"
-                    height="300"
-                  />
+                  ><div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/screen.jpg    1x,
+                          ./images/p/screen@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/screen-tab.jpg    1x,
+                          ./images/p/screen-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/screen-mob.jpg    1x,
+                          ./images/p/screen-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/screen.jpg"
+                        alt="screen design"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -267,13 +392,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="link">
-                  <img
-                    class="product-img"
-                    src="./images/card/online-courses.jpg"
-                    alt="Charming short haired lady gray hat standing beside wall with smartphone"
-                    width="360"
-                    height="300"
-                  />
+                  <div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/courses.jpg    1x,
+                          ./images/p/courses@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/courses-tab.jpg    1x,
+                          ./images/p/courses-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/courses-mob.jpg    1x,
+                          ./images/p/courses-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/courses.jpg"
+                        alt="courses marketing"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -289,13 +439,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="product-link link">
-                  <img
-                    class="product-img"
-                    src="./images/card/stories.jpg"
-                    alt="Instagram Stories Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/instagram.jpg    1x,
+                          ./images/p/instagram@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/instagram-tab.jpg    1x,
+                          ./images/p/instagram-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/instagram-mob.jpg    1x,
+                          ./images/p/instagram-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/instagram.jpg"
+                        alt="instagram design"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -311,13 +486,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="link">
-                  <img
-                    class="product-img"
-                    src="./images/card/organic-food.jpg"
-                    alt="Organic Food"
-                    width="360"
-                    height="300"
-                  />
+                  <div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/food.jpg    1x,
+                          ./images/p/food@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/food-tab.jpg    1x,
+                          ./images/p/food-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/food-mob.jpg    1x,
+                          ./images/p/food-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/food.jpg"
+                        alt="food web"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -333,13 +533,38 @@
             <li class="product-item">
               <div class="product-cover-wrap">
                 <a href="#" class="product-link link">
-                  <img
-                    class="product-img"
-                    src="./images/card/fresh-coffee.jpg"
-                    alt="Fresh Coffee"
-                    width="360"
-                    height="300"
-                  />
+                  <div class="product-img">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/p/coffee.jpg    1x,
+                          ./images/p/coffee@2x.jpg 2x
+                        "
+                        media="(min-width: 1158px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/coffee-tab.jpg    1x,
+                          ./images/p/coffee-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/p/coffee-mob.jpg    1x,
+                          ./images/p/coffee-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="projects-foto"
+                        src="./images/p/coffee.jpg"
+                        alt="coffee web"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
                 </a>
                 <p class="product-top-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
